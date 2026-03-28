@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>S-Store</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #eee;
+}
+
+.logo {
+  width: 150px;
+}
+
+.search-box {
+  width: 600px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.icons i {
+  margin-left: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.breadcrumb {
+  margin-left: 60px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 40px 80px;
+}
+
+.product {
+  text-align: left;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: white;
+}
+
+.product p {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.product b {
+  font-size: 18px;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background: #eee;
+  margin-top: 50px;
+}
+
+.footer div {
+  width: 30%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="Rectangle 1.svg" class="logo">
+
+  <input class="search-box" placeholder="Bạn đang tìm gì ?">
+
+  <div class="icons">
+    <i class="fa-regular fa-user" onclick="openLogin()"></i>
+    <i class="fa-solid fa-cart-shopping" onclick="openCart()"></i>
+  </div>
+</div>
+
+<!-- TITLE -->
+<div class="title">GIÀY NIKE NAM</div>
+<div class="breadcrumb">Trang chủ / Giày NIKE NAM</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+  <div class="product">
+    <img src="Rectangle 2.jpg">
+    <p>Nike Air Force 1 White Low</p>
+    <b>250.000đ</b><br>
+    <button onclick="addToCart('Nike Air Force 1',250000)">MUA NGAY</button>
+  </div>
+
+  <div class="product">
+    <img src="Rectangle 3.jpg">
+    <p>Air Max 97 Ultra 17 Triple Black</p>
+    <b>550.000đ</b><br>
+    <button onclick="addToCart('Air Max 97',550000)">MUA NGAY</button>
+  </div>
+
+  <div class="product">
+    <img src="Rectangle 4.jpg">
+    <p>Air Alpha 97 Ultra 17 Triple White</p>
+    <b>650.000đ</b><br>
+    <button onclick="addToCart('Air Alpha 97',650000)">MUA NGAY</button>
+  </div>
+
+  <div class="product">
+    <img src="Rectangle 5.jpg">
+    <p>Air More Uptempo White Gum</p>
+    <b>950.000đ</b><br>
+    <button onclick="addToCart('Air More Uptempo',950000)">MUA NGAY</button>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+ <style>
+.footer {
+  background: #111; 
+  color: white;       
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+</style>
+<div class="footer">
+  <div>
+    🚚 Miễn phí vận chuyển<br><br>
+    ✔ Hàng chính hãng<br><br>
+    🔄 Đổi trả 30 ngày
+  </div>
+
+  <div>
+    <b>Hỗ Trợ Khách Hàng</b><br>
+    • Hướng Dẫn Đặt Hàng<br>
+    • Hướng Dẫn Tạo Tài Khoản<br>
+    • Kiểm Tra Đơn Hàng<br>
+    • Thông Tin Liên Hệ<br>
+    • FAQ
+  </div>
+
+  <div>
+    <b>S-STORE</b><br>
+    Cơ sở 1: Hà Nội<br>
+    Hotline: 0123456789<br><br>
+    Cơ sở 2: TP.HCM<br>
+    Hotline: 0987654321
+  </div>
+</div>
+
+</body>
+</html>
